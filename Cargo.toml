@@ -1,0 +1,11 @@
+[package]
+name = "nostd-sample"
+version = "0.1.0"
+authors = ["Armer Song <armer_song@qq.com>"]
+
+[dependencies]
+libc = "=0.2.44"
+
+[profile.release]
+lto = true
+opt-level = "s"
