@@ -4,8 +4,14 @@ version = "0.1.0"
 authors = ["Armer Song <armer_song@qq.com>"]
 
 [dependencies]
-libc = "=0.2.44"
+#libc = "=0.2.44"
+libc = "0.2"
 
 [profile.release]
 lto = true
 opt-level = "s"
+panic = "abort"
+
+[profile.dev]
+panic = "abort"
+lto = true
